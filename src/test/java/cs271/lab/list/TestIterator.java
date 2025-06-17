@@ -99,9 +99,7 @@ public class TestIterator {
     final var i = list.iterator();
     while(i.hasNext()) {
       sum = sum + i.next().doubleValue();
-
     }
-
     // TODO use an iterator and a while loop to compute the average (mean) of the values
 
     // (defined as the sum of the items divided by the number of items)
