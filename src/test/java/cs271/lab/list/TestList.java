@@ -15,7 +15,8 @@ public class TestList {
 
   @Before
   public void setUp() throws Exception {
-    list = new ArrayList<Integer>();
+    list = new LinkedList<Integer>();
+    //list = new ArrayList<Integer>();
     // TODO Question: Also try with a LinkedList - does it make any difference?
   }
 
@@ -150,6 +151,7 @@ public class TestList {
     list.add(66);
     // TODO in a single statement using removeAll and List.of,
     // remove items from the list to make the following assertions pass
+    list.removeAll(List.of(33,44, 55, 66));
     // (without touching the assertions themselves)
     assertEquals(3, list.size());
     assertEquals(List.of(77, 77, 77), list);
